@@ -1,0 +1,12 @@
+***GWAS code***
+
+****White, AC3DBPnight*****
+
+D:\PLINK\PEAR1_GWAS>plink --bfile pear_data12_clean3 --pheno ABP_base_pheno_w.txt --pheno-name AC3DBPnight --covar ABP_base_pheno_w.txt 
+--covar-number 1-5 --linear --ci 0.95 --hide-covar --vif 1000 --out DBP_night_w
+
+
+
+./plink2 --bfile pear_data12_clean3 --pheno ABP_base_pheno_w.txt 
+--pheno-name AC3ASBPPMAMratio --covar ABP_base_pheno_w.txt --covar-col-nums 3-7 
+--covar-variance-standardize --glm hide-covar no-x-sex --ci 0.95 --vif 1000 --out DBP_night_w
