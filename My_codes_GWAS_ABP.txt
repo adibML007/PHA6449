@@ -1,3 +1,9 @@
+plink 2.0
+
 ./plink2 --bfile pear_data12_clean3 --pheno ABP_base_pheno_w.txt 
 --pheno-name AC3ASBPPMAMratio --covar ABP_base_pheno_w.txt --covar-col-nums 3-7 
 --covar-variance-standardize --glm hide-covar no-x-sex --ci 0.95 --vif 1000 --out DBP_night_w
+
+plink 1.9
+
+./plink --bfile pear_data12_clean3 --pheno ABP_base_pheno_b.txt --pheno-name AC3_dipper  --covar ABP_base_pheno_b.txt --covar-name age,gender,bmi,PC1,PC2 --logistic --1 --ci 0.95 --hide-covar --vif 1000 --out AC3_dipper_b_logistic
